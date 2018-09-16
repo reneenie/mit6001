@@ -18,4 +18,4 @@ out1=x**y
 out2=math.log(x,2)
 print('x raised to the power y is',out1)
 print('the log(base 2) of x is',out2)
-# th end
+# the end
