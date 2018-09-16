@@ -1,0 +1,21 @@
+# 3.4
+# Using floating to approximately display value 1.0
+x=0.0
+for i in range(10):
+    x+=0.1
+if abs(x-1.0)<0.0001:
+    print (x, '=1.0')
+else:
+    print (x, 'is not 1.0')
+
+# to avoid mathemitically incorrect output, use code below
+x=0.0
+for i in range(10):
+    x+=0.1
+if abs(x-1.0)<0.0001:
+    print (x, '=1.0')
+else:
+    print (x, 'is not 1.0')
+
+## !!! It's always a better idea to set a limit to
+# the different between two floats than using "=="
