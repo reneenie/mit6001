@@ -1,0 +1,21 @@
+# Finger Exercise 3.1
+# asks the user to enter an integer and prints tow integers, root and pwr, 
+# such that 0<pwr<6 and root**pwr is euqal to  the integer entered.
+
+x=int(input('Enter an integer: '))
+r=0
+if x==0:
+    print('Root is equal to zero,\
+                      and pwr can be any integer.')
+else:
+    while r<abs(x): 
+        r+=1
+        for p in range(1,6):
+            if r**p==x:
+                print('Root is equal to',r,\
+                      'and pwr is equal to',p,'.')
+                break
+            elif -r**p==x:
+                print('Root is equal to',-r,\
+                      'and pwr is equal to',p,'.')
+                break
